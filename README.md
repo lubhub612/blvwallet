@@ -1,24 +1,22 @@
 BlvWallet is a z-Addr first, Sapling compatible wallet and full node for bitcoinloved that runs on Linux, Windows and macOS.
 
-![Screenshot](resources/screenshot1.png?raw=true)
-![Screenshots](resources/screenshot2.png?raw=true)
 
 # Installation
 
-Head over to the releases page and grab the latest installers or binary. https://github.com/BitcoinloveFoundation/blvwallet/releases
+Head over to the releases page and grab the latest installers or binary. https://github.com/lubhub612/blvwallet/releases
 
 ### Linux
 
 If you are on Debian/Ubuntu, please download the '.AppImage' package and just run it.
 
 ```
-./Blvwallet.Fullnode-0.9.9.AppImage
+./Blvwallet.Fullnode-0.0.1.AppImage
 ```
 
 If you prefer to install a `.deb` package, that is also available.
 
 ```
-sudo dpkg -i blvwallet_0.9.9_amd64.deb
+sudo dpkg -i blvwallet_0.0.1_amd64.deb
 sudo apt install -f
 ```
 
@@ -36,7 +34,7 @@ BlvWallet needs a Bitcoinlove node running bitcoinloved. If you already have a b
 
 If you don't have one, BlvWallet will start its embedded bitcoinloved node.
 
-Additionally, if this is the first time you're running BlvWallet or a bitcoinloved daemon, BlvWallet will download the Bitcoinlove params (~777 MB) and configure `bitcoinlove.conf` for you.
+Additionally, if this is the first time you're running BlvWallet or a bitcoinloved daemon, BlvWallet will download the Bitcoinlove params (~1877 MB) and configure `bitcoinlove.conf` for you.
 
 ## Compiling from source
 
@@ -50,7 +48,7 @@ You need to have the following software installed before you can build Blvwallet
 - Yarn - https://yarnpkg.com
 
 ```
-git clone https://github.com/BitcoinloveFoundation/blvwallet.git
+git clone https://github.com/lubhub612/blvwallet.git
 cd blvwallet
 
 yarn install
@@ -69,9 +67,9 @@ To start in production mode, run
 yarn start
 ```
 
-### [Troubleshooting Guide & FAQ](https://github.com/BitcoinloveFoundation/blvwallet/wiki/Troubleshooting-&-FAQ)
+### [Troubleshooting Guide & FAQ](https://github.com/lubhub612/blvwallet/wiki/Troubleshooting-&-FAQ)
 
 Please read the [troubleshooting guide](https://docs.blvwallet.co/troubleshooting/) for common problems and solutions.
-For support or other questions, tweet at [@blvwallet](https://twitter.com/blvwallet) or [file an issue](https://github.com/BitcoinloveFoundation/blvwallet/issues).
+For support or other questions, tweet at [@blvwallet](https://twitter.com/blvwallet) or [file an issue](https://github.com/lubhub612/blvwallet/issues).
 
 _PS: BlvWallet is NOT an official wallet, and is not affiliated with the Electric Coin Company in any way._
