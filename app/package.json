@@ -1,0 +1,18 @@
+{
+  "name": "blvwallet",
+  "productName": "Blvwallet Fullnode",
+  "version": "0.0.1",
+  "description": "Blvwallet Fullnode",
+  "main": "./main.prod.js",
+  "author": {
+    "name": "Aditya Kulkarni",
+    "email": "aditya@blvwallet.co",
+    "url": "https://github.com/adityapk00/blvwallet-electron"
+  },
+  "scripts": {
+    "electron-rebuild": "node -r ../internals/scripts/BabelRegister.js ../internals/scripts/ElectronRebuild.js",
+    "postinstall": "yarn electron-rebuild"
+  },
+  "license": "MIT",
+  "dependencies": {}
+}
