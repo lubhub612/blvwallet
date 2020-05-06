@@ -1,7 +1,7 @@
 {
   "name": "blvwallet",
   "productName": "Blvwallet Fullnode",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Blvwallet Fullnode",
   "main": "./main.prod.js",
   "author": {

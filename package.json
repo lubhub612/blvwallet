@@ -1,7 +1,7 @@
 {
   "name": "blvwallet",
   "productName": "Blvwallet Fullnode",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Blvwallet Fullnode (Electron version)",
   "scripts": {
     "build": "concurrently \"yarn build-main\" \"yarn build-renderer\"",
@@ -78,7 +78,7 @@
       ]
     },
     "win": {
-      "icon": "./resources/icon.ico",
+      "icon": "./resources/blvwalletlogo.ico",
       "extraFiles": [
         {
           "from": "bin/win",

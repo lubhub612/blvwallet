@@ -16,7 +16,7 @@ import RPC from '../rpc';
 import cstyles from './Common.module.css';
 import styles from './LoadingScreen.module.css';
 import { NO_CONNECTION } from '../utils/utils';
-import Logo from '../assets/img/logobig.png';
+import Logo from '../assets/img/blvwalletlogo.png';
 import bitcoinlovedlogo from '../assets/img/bitcoinlovedlogo.gif';
 
 const locateBitcoinloveConfDir = () => {

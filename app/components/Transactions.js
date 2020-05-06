@@ -49,7 +49,7 @@ const TxModalInternal = ({ modalIsOpen, tx, closeModal, currencyName, blvPrice, 
     if (currencyName === 'TESTBLV') {
       shell.openExternal(`https://chain.so/tx/BLVTEST/${txid}`);
     } else {
-      shell.openExternal(`https://zcha.in/transactions/${txid}`);
+      shell.openExternal(`http://178.128.83.219:3001/tx/${txid}`);
     }
   };
 

@@ -14,7 +14,7 @@ import PropTypes from 'prop-types';
 import styles from './Sidebar.module.css';
 import cstyles from './Common.module.css';
 import routes from '../constants/routes.json';
-import Logo from '../assets/img/logobig.png';
+import Logo from '../assets/img/blvwalletlogo.png';
 import { Info } from './AppState';
 import Utils from '../utils/utils';
 

@@ -36,7 +36,7 @@ const AddressBlock = ({ addressBalance, label, currencyName, blvPrice, privateKe
     if (currencyName === 'TESTBLV') {
       shell.openExternal(`https://chain.so/address/BLVTEST/${address}`);
     } else {
-      shell.openExternal(`https://zcha.in/accounts/${address}`);
+      shell.openExternal(`http://178.128.83.219:3001/address/${address}`);
     }
   };
 
@@ -144,16 +144,32 @@ export default class Receive extends Component<Props> {
       return map;
     }, {});
 
-    const zaddrs = addresses
+    /*const zaddrs = addresses
       .filter(a => Utils.isSapling(a))
       .slice(0, 100)
       .map(a => new AddressBalance(a, addressMap[a]));
 
     let defaultZaddr = zaddrs.length ? zaddrs[0].address : '';
     if (receivePageState && Utils.isSapling(receivePageState.newAddress)) {
-      defaultZaddr = receivePageState.newAddress;
+      defaultZaddr = receivePageState.newAddress; 
+       */
+       //move this address to the front, since the scrollbar will reset when we re-render
+      //zaddrs.sort((x, y) => {
+        // eslint-disable-next-line prettier/prettier, no-nested-ternary
+       // return x.address === defaultZaddr ? -1 : y.address === defaultZaddr ? 1 : 0
+      //});
+    //}
 
-      // move this address to the front, since the scrollbar will reset when we re-render
+   const zaddrs = addresses
+      .filter(a => Utils.isZaddr(a))
+      .slice(0, 100)
+      .map(a => new AddressBalance(a, addressMap[a]));
+
+    let defaultZaddr = zaddrs.length ? zaddrs[0].address : '';
+    if (receivePageState && Utils.isZaddr(receivePageState.newAddress)) {
+      defaultZaddr = receivePageState.newAddress; 
+       
+       //move this address to the front, since the scrollbar will reset when we re-render
       zaddrs.sort((x, y) => {
         // eslint-disable-next-line prettier/prettier, no-nested-ternary
         return x.address === defaultZaddr ? -1 : y.address === defaultZaddr ? 1 : 0
